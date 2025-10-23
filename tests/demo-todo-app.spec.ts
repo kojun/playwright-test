@@ -25,6 +25,6 @@ test('TodoMVC: 追加・完了・フィルタ', async ({ page }) => {
   // Active フィルタで残り1件
   await page.getByRole('link', { name: 'Active' }).click();
   await expect(page.locator('.todo-list li')).toHaveCount(1);
-  await expect(page.locator('.todo-list li')).toContainText('Write Playwright tests');
+  await expect(page.locator('.todo-list li')).toContainText('Write Playwright tests')
 });
 
